@@ -1,5 +1,5 @@
 import React from "react";
-import UserImg from "../../assets/img/UserImg.jpg";
+import UserImg from "../../assets/img/userimg.jpg";
 import LeftHeadercss from "./LeftHeader.css";
 import PullImg from "../../assets/img/pull-shark-default.png";
 

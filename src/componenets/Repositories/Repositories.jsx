@@ -1,14 +1,23 @@
 import React, { useState, useEffect } from "react";
 import Api from "../../API/URL";
+import Pagination from "@mui/material/Pagination";
+import Stack from "@mui/material/Stack";
 import Repositoriescss from "../Repositories/Repositories.css";
 function Repositories(props) {
   const [repos, setRepos] = useState([]);
+  const [prev, setPrev] = useState(10);
+  const [current, setCurrent] = useState(2);
   useEffect(() => {
     Api.getRepos().then((item) => setRepos(item.data));
   }, []);
 
+  const pagenation = prev * current;
+  const numberDat = pagenation - prev;
+
+  const currentData = repos.slice(numberDat, pagenation);
+
   return (
-    <div className="">
+    <div className="col-9">
       <div className="wrapper_info_code">
         <div className="wrapper_filter d-flex">
           <input
@@ -32,13 +41,16 @@ function Repositories(props) {
             <option value="">Html</option>
           </select>
           <a className="new_link " href="#">
-            <i class="bx bx-book-bookmark me-2"></i>
+            <i className="bx bx-book-bookmark me-2"></i>
             New
           </a>
         </div>
         <ul className="wrapper_item ">
-          {repos?.map((e) => (
-            <li className="wrapper_repos_item d-flex justify-content-between">
+          {currentData?.map((e) => (
+            <li
+              className="wrapper_repos_item d-flex justify-content-between"
+              key={Math.random()}
+            >
               <div className="d-flex align-items-center">
                 <h3 className="me-2">
                   <a className="repo_name" href="#">
@@ -60,6 +72,19 @@ function Repositories(props) {
             </li>
           ))}
         </ul>
+        <div className="w-100 d-flex justify-content-end my-5">
+          <Stack
+            spacing={2}
+            sx={{ border: 1, p: 1, bgcolor: "background.paper" }}
+          >
+            <Pagination
+              count={repos.length / 10}
+              color="primary"
+              defaultValue={1}
+              onChange={(e) => setCurrent(e.target.textContent)}
+            />
+          </Stack>
+        </div>
       </div>
     </div>
   );

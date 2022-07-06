@@ -8,7 +8,7 @@ function Overwiev(props) {
   }, []);
 
   return (
-    <>
+    <div className="col-9">
       <div className="wrapper_info_code">
         <div className="d-flex justify-content-between mb-2 ">
           <p className="ms-3">Popular repositories</p>
@@ -16,7 +16,7 @@ function Overwiev(props) {
         </div>
         <ul className="wrapper_item">
           {overview?.map((e) => (
-            <li className="item mb-3">
+            <li className="item mb-3" key={Math.random()}>
               <div className="p-3">
                 <div className="d-flex justify-content-between mb-3">
                   <a href="#">{e.name}</a>
@@ -29,7 +29,7 @@ function Overwiev(props) {
           ))}
         </ul>
       </div>
-    </>
+    </div>
   );
 }
 

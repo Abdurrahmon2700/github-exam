@@ -6,24 +6,26 @@ import Hero from "../src/componenets/Hero/Hero";
 import Overview from "../src/componenets/Overview/Overview";
 import Repositories from "../src/componenets/Repositories/Repositories";
 import Footer from "./componenets/Footer/Footer";
+import Profile from "./pages/profile";
+import Repos from "./pages/repos";
+
 function App(props) {
   return (
-    <>
+    <div className="container-fluid">
       <Navbar />
       <Hero />
       <div className="wrapper_left_tight">
-        <LeftHeader />
         <section className="result_section">
           <Routes>
-            <Route path="/" element={<Overview />} />
-            <Route path="/Overview" element={<Overview />} />
-            <Route path="/Repositories" element={<Repositories />} />
+            <Route path="/" element={<Profile />} />
+            <Route path="/Overview" element={<Profile />} />
+            <Route path="/Repositories" element={<Repos />} />
           </Routes>
         </section>
       </div>
 
       <Footer />
-    </>
+    </div>
   );
 }
 

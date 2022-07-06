@@ -5,7 +5,7 @@ function Footer(props) {
     <>
       <div className="container-fluid d-flex">
         <div className="d-flex w-25">
-          <i class="bx bxl-github"></i>
+          <i className="bx bxl-github"></i>
           <p>© 2022 GitHub, Inc.</p>
         </div>
         <ul className="d-flex justify-content-between list-unstyled">

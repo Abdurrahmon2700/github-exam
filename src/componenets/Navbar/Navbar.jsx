@@ -10,7 +10,7 @@ function Navbar() {
           <ul className="p-0 m-0 d-flex align-items-center list-unstyled">
             <li>
               <a href="#">
-                <i class="bx bxl-github"></i>
+                <i className="bx bxl-github"></i>
               </a>
             </li>
             <li>
@@ -37,16 +37,16 @@ function Navbar() {
           <ul className="p-0 m-0 d-flex align-items-center list-unstyled">
             <li>
               <a href="#">
-                <i class="bx bx-bell size_icon"></i>
+                <i className="bx bx-bell size_icon"></i>
               </a>
             </li>
             <li>
               <div>
                 <a href="#">
-                  <i class="bx bx-plus size_icon"></i>
+                  <i className="bx bx-plus size_icon"></i>
                 </a>
                 <a href="#">
-                  <i class="bx bxs-down-arrow"></i>
+                  <i className="bx bxs-down-arrow"></i>
                 </a>
               </div>
             </li>
@@ -56,7 +56,7 @@ function Navbar() {
                   <img className="user_img" src={UserImg} alt="" />
                 </a>
                 <a href="">
-                  <i class="bx bxs-down-arrow"></i>
+                  <i className="bx bxs-down-arrow"></i>
                 </a>
               </div>
             </li>

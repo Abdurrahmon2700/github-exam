@@ -6,6 +6,7 @@
 }
 
 .list_ul {
-  width: 41%;
+  display: flex;
+  justify-content: center;
   margin: 0 auto;
 }

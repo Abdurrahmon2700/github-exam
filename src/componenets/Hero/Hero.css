@@ -1,0 +1,11 @@
+.count_repo {
+  border-radius: 10px;
+  padding: 2px 4px;
+  font-size: 12px;
+  background-color: #30363d;
+}
+
+.list_ul {
+  width: 41%;
+  margin: 0 auto;
+}

@@ -1,0 +1,54 @@
+.search_repo {
+  width: 55%;
+  background-color: #0d1117;
+  display: inline-block;
+  border: 0.1px solid #30363d;
+  height: 35px;
+  margin-left: 12px;
+  margin-right: 10px;
+}
+
+.search_repo:focus {
+  background-color: #0d1117;
+}
+
+select {
+  width: 10% !important;
+  height: 35px;
+  margin-left: 5px;
+  background-color: #21262d !important;
+  color: #fff !important;
+  border-radius: 6px !important;
+  border-color: #30363d !important;
+}
+
+.new_link {
+  height: 35px;
+  color: #fff !important;
+  background-color: #238636;
+  padding: 5px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.wrapper_info_repos {
+  width: 100%;
+}
+
+.wrapper_repos_item {
+  width: 100%;
+  padding: 40px 0;
+  display: flex;
+  justify-content: space-between !important;
+  border-bottom: 1px solid #30363d;
+}
+
+.repo_name {
+  color: #58a6ff !important;
+}
+
+.repo_btn {
+  padding: 2px 18px;
+  background-color: #30363d;
+  color: #fff !important;
+}

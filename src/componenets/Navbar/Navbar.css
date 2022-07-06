@@ -1,0 +1,73 @@
+.wrapper_navbar {
+  height: 66px;
+  background-color: #161b22;
+  color: #fff;
+  padding: 16px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.bxl-github {
+  font-size: 42px;
+  color: #fff;
+}
+
+li {
+  position: relative;
+  margin-left: 16px;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.search_input {
+  width: 280px;
+  height: 32px;
+  background-color: #161b22;
+  border: 1px solid #363b3f;
+  color: #c2c3c5;
+  font-size: inherit;
+  padding: 10px;
+}
+
+.search_input:focus {
+  outline: none;
+}
+
+.search_input::placeholder {
+  color: #c2c3c5;
+}
+
+.button_input {
+  position: absolute;
+  background-color: transparent;
+  border: 1px solid #363b3f;
+  border-radius: 2px;
+  color: #c2c3c5;
+  left: 91%;
+  top: 19%;
+  font-size: 12px;
+  padding: 0 7px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.size_icon {
+  font-size: 20px;
+}
+
+.bxs-down-arrow {
+  font-size: 10px;
+}
+.user_img {
+  width: 22px;
+  height: 22px;
+  border-radius: 50px;
+}
+
+.wrapper_info_code {
+}
